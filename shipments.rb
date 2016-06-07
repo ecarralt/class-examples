@@ -62,7 +62,7 @@ end
 
 shipments = []
 
-CSV.foreach("../lab-resources/lab2/planet_express_logs.csv",headers: true) do |row|
+CSV.foreach("planet_express_logs.csv",headers: true) do |row|
   hash = row.to_hash
 
   shipment = Shipment.new(hash)
